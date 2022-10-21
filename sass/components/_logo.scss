@@ -1,0 +1,21 @@
+
+.logo {
+    color: $logo-tetx-color;
+    font-family: $primary-font-family;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    &__text {
+        color: $accent-color;
+    }
+
+    &--footer {
+        display: block;
+        color: $white-color;
+        margin-bottom: 20px;
+    }
+}
+
