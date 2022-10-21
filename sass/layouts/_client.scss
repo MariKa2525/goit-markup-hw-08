@@ -1,18 +1,25 @@
 .client {
     &__list  {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
         gap: 30px;
     }
 
     &__item {
-        width: 170px;
         height: 92px;
+        width: calc((100% - 30px) / 2);
+        @include tablet {
+            width: calc((100% - 60px) / 3);
+        }
+        @include desktop {
+            width: calc((100% - 150px) / 6);
+        }
     }
 
     &__link {
         width: 100%;
         height: 100%;
+
         display: flex;
         border-radius: 4px;
         align-items: center;

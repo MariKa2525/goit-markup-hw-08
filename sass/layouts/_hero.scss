@@ -1,11 +1,14 @@
-
 .hero {
     display: flex;
-    padding: 200px 0;
+    padding: 118px 0;
     align-items: center;
-    max-width: 1600px;
-    height: 600px;
+    width: 100%;
+    max-width: 480px;
+    height: 400px;
+    // max-width: 1600px;
+    // height: 600px;
     margin: 0 auto;
+
     
     background-color: $background-hero;
     background-image: linear-gradient( to right,
@@ -15,19 +18,33 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-   
+
+    @include desktop {
+        padding: 200px 0;
+    }
+
     &__title {
         margin: auto;
         margin-bottom: 30px;
-        width: 696px;
-    
+        
         color: $white-color;
         font-style: normal;
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        font-size: 26px;
+        line-height: 1.61;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
+        width: 360px;
+
+        @include desktop {
+            font-size: 44px;
+            line-height: 1.36;
+            width: 696px;
+
+        }
+
+
+
     }
 }
