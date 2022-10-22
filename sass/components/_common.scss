@@ -30,6 +30,9 @@ body {
     &--header {
         display: flex;
         align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 10px;
     }
 
     &--hero {
@@ -40,6 +43,7 @@ body {
     &--footer {
         display: flex;
         align-items: baseline;
+        
     }
 
 

@@ -17,14 +17,55 @@
 <body>
     <header class="header">
         <div class="container container--header">
-            
+           
+            <nav class="navbar">
                 <a href="./index.html" class="logo">
                     <span class="logo__text">Web</span>Studio
                 </a>
 
-                <nav class="navbar">
+                <button class="burger" data-menu-button type="button">
+                    <span class="title-hidden">Відкрити головне меню</span>
+                <span class="burger__line"></span>
+                </button>
 
-                <ul class="navbar__list list">
+                <div class="mobile-menu" data-menu>
+                    <ul class="mobile-menu-navbar__list list">
+                        <li class="mobile-menu-navbar__item mobile-menu-navbar__item--active">
+                            <a href="./index.html" class="mobile-menu-navbar__link">Студія</a></li>
+                        <li class="mobile-menu-navbar__item">
+                            <a href="./portfolio.html" class="mobile-menu-navbar__link">Портфоліо</a></li>
+                        <li class="mobile-menu-navbar__item">
+                            <a href="#" class="mobile-menu-navbar__link">Контакти</a></li>
+                    </ul>
+               
+        
+                <ul class="mobile-menu-contacts list">
+                    <li class="mobile-menu-contacts__item">
+                        <a href="mailto:info@devstudio.com" class="mobile-menu-contacts__link">
+                        info@devstudio.com</a>
+                    </li>
+                    <li class="mobile-menu-contacts__item">
+                        <a href="tel:+380961111111" class="mobile-menu-contacts__link">
+                         +38 096 111 11 11</a>
+                    </li>
+                </ul>
+                
+            <ul class="social list">
+                <li class="social__item">
+                    <a href="#" class="social__link">Instagram</a>
+                </li> <li class="social__item">
+                    <a href="#" class="social__link">Twitter</a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">Facebook</a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">LinkedIn</a>
+                </li>
+            </ul>
+    </div>
+
+            <ul class="navbar__list list">
                     <li class="navbar__item navbar__item--active">
                         <a href="./index.html" class="navbar__link">Студія</a></li>
                     <li class="navbar__item">
@@ -33,6 +74,7 @@
                         <a href="#" class="navbar__link">Контакти</a></li>
                 </ul>
             </nav>
+           
             <ul class="contacts list">
                 <li class="contacts__item">
                     <a href="mailto:info@devstudio.com" class="contacts__link">
@@ -47,6 +89,8 @@
                     </svg> +38 096 111 11 11</a>
                 </li>
             </ul>
+
+
         </div>
     </header>
 
@@ -462,7 +506,7 @@
 
 
 
-
+<script defer src="js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 

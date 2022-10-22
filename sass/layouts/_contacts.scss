@@ -1,7 +1,8 @@
 .contacts {
     display: none;
     @include tablet {
-    display: flex;
+    // display: flex;
+    display: block;
     margin-left: auto;
 
     transition-property: color;

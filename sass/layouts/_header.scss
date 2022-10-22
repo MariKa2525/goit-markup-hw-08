@@ -1,6 +1,10 @@
 .header {
+    position: relative;
+    display: flex;
     height: 60px;
     border-bottom: 1px solid $border-gray;
+    // padding-left: 15px;
+    // padding-right: 10px;
     @include tablet {
         height: 80px;
         width: 100%;
