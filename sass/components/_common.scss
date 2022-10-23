@@ -24,27 +24,58 @@ body {
     padding-left: 15px;
     margin: 0 auto;
 
+    
+@include mobile {
+    // width: 480px;
 
+}
+@include tablet {
+   width: 768px;
 
+}
+@include desktop {
+    width: 1200px;
+   }
 
     &--header {
         display: flex;
         align-items: center;
         justify-content: center;
         padding-left: 15px;
-        padding-right: 10px;
+        padding-right: 15px;
     }
 
     &--hero {
         text-align: center;
+        // padding: 118px 60px;
+
+       @include tablet {
+        padding: 118px 204px;
        
+    }
     }
 
     &--footer {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    width: 100%;
+
+    @include tablet {
         display: flex;
         align-items: baseline;
-        
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        }
+
+        @include desktop {
+            text-align: left;
+            
+        }
     }
+
+    
 
 
 }

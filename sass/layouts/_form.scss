@@ -1,8 +1,12 @@
 .form {
     
-    width: 448px;
+    width: 370px;
     margin-left: auto;
     margin-right: auto;
+
+    @include desktop {
+        width: 448px;
+    }
     
     &__fild {
         position: relative;
@@ -141,6 +145,16 @@
     
         border: 2px solid $primary-text-color;
         border-radius: 2px; 
+    }
+
+    &__text {
+        font-size: 12px;
+line-height: 1.16;
+
+        @include desktop {
+            font-size: 14px;
+            line-height: 1.71;
+        }
     }
 
     &__contract {

@@ -1,13 +1,26 @@
 .footer {
-    height: 252px;
-    padding: 60px 0;
+    height: 603px;
+    padding: 60px 15px;
     text-align: left;
 
     background-color: $footer-bg;
 
+    @include tablet {
+        // height: 463px;
+        text-align: center;
+
+    }
+    @include desktop {
+        // height: 252px;
+    }
+
     &__inner {
         display: block;
-        margin-left: 70px;
+
+        @include desktop {
+            margin-left: 70px;
+        }
+
     }
 
     &__header {
@@ -21,7 +34,15 @@
 
     &__email {
         display: block;
-        margin-left: 93px;
+
+        @include tablet {
+            display: block;
+
+        }
+        @include desktop {
+            margin-left: 93px;
+        }
+        
     }
 }
 
@@ -29,7 +50,7 @@
     &__location {
         display: block;
         color: $white-color;
-        margin-bottom: 9px;
+        margin-bottom: 8px;
     
         font-style: normal;
         line-height: 1.7;
@@ -44,6 +65,11 @@
         &:focus {
             color: $accent-color;
         }
+
+       
+        @include desktop {
+            margin-bottom: 9px;
+        }
     }
 
     &__contacts {
@@ -53,7 +79,10 @@
     }
 
     &__item {
-        margin-bottom: 9px;
+        margin-bottom: 8px;
+        @include desktop {
+            margin-bottom: 9px;
+        }
     
         
         &:last-child {
@@ -81,15 +110,23 @@
 
 .email {
     margin: 0;
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
 
     &__input {
-        width: 358px;
+        display: block;
+        width: 100%;
         padding-left: 16px;
         padding-top: 15px;
         padding-bottom: 15px;
         border-radius: 4px;
         margin-top: 20px;
-        margin-right: 12px;
+        margin-bottom: 20px;
+        
     
         border: 1px solid rgba(255, 255, 255, 0.3);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -99,5 +136,16 @@
         font-family: $base-font-family;
         font-size: 16px;
         line-height: 1.25;
+
+        @include mobile {
+            width: 450px;
+
+        }
+
+        @include desktop {
+            display: flex;
+            margin-right: 12px;
+            width: 358px;
+        }
     }
 }

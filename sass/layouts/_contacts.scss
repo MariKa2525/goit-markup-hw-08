@@ -1,28 +1,43 @@
 .contacts {
     display: none;
+    
     @include tablet {
-    // display: flex;
     display: block;
     margin-left: auto;
 
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @include desktop {
+        display: flex;
+
+    }
 
     &__item:not(:first-child) {
-        margin-left: 50px;
+        @include tablet {
+            margin-top: 10px;
+        }
+
+        @include desktop {
+            margin-left: 50px;
+            margin-top: 0;
+        }
+        
     } 
 
     &__link {
+        @include tablet {
+            position: relative;
+        
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top: 32px;
-        padding-bottom: 32px;
-            
+        
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
+        font-size: 12px;
+        line-height: 1.16;
         letter-spacing: 0.02em;
         text-decoration: none;
         color: $primary-text-color;
@@ -30,21 +45,36 @@
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-        &:hover,
-        &:focus {
-            color: $accent-color;
+             
+    &:hover,
+    &:focus {
+        
+        color: $accent-color;
         }
-    } 
+
+          @include desktop {
+            padding-top: 32px;
+            padding-bottom: 32px;
+            font-size: 14px;
+            line-height: 1.14;
+            }
+        }
+        }
+            
+        
+    
 
     &__icon {
-        margin-right: 10px;
-        fill: currentColor;
+       
+            margin-right: 10px;
+            fill: currentColor;
+       
     }
 
     &__item:hover &__icon,
     &__item:focus &__icon {
+   
         fill: $accent-color;
+        
     }
-}
 }
