@@ -1,11 +1,12 @@
 .navbar  {
-    position: absolute;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 15px;
     padding-left: 15px;
-    width: 100%;  
+    width: 100%;
+
     
     @include tablet {
         display: flex;
@@ -23,12 +24,14 @@
         justify-content: center;
         margin-left: 87px;
         margin-right: 96px;
+       
 
         // margin-left: 93px;
     }
     }
     
     &__item {
+       
         @include tablet {  
             &:not(:first-child) {
                 margin-left: 50px;
@@ -56,6 +59,7 @@
 
     &__link {
         @include tablet {
+           
             position: relative;
             display: flex;
             align-items: center;

@@ -19,14 +19,13 @@ body {
 
 .container {
     width: 100%;
-    // width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
 
     
 @include mobile {
-    // width: 480px;
+    width: 480px;
 
 }
 @include tablet {
@@ -43,6 +42,14 @@ body {
         justify-content: center;
         padding-left: 15px;
         padding-right: 15px;
+        @include desktop {
+            max-width: 1200px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            
+
+        }
     }
 
     &--hero {
@@ -57,21 +64,22 @@ body {
 
     &--footer {
     display: block;
-    padding-left: 0;
-    padding-right: 0;
     text-align: center;
     width: 100%;
 
     @include tablet {
         display: flex;
         align-items: baseline;
-        justify-content: space-evenly;
+        justify-content: space-around;
         flex-wrap: wrap;
+        gap: 60px;
         }
 
         @include desktop {
             text-align: left;
-            
+            flex-wrap: nowrap;
+            margin-left: auto;
+    margin-right: auto;
         }
     }
 

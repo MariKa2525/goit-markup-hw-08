@@ -1,7 +1,7 @@
 .footer {
     height: 603px;
     padding: 60px 15px;
-    text-align: left;
+    // text-align: left;
 
     background-color: $footer-bg;
 
@@ -12,6 +12,17 @@
     }
     @include desktop {
         // height: 252px;
+        
+    }
+
+    &__wrap {
+        
+        width: 100%;
+        @include tablet {
+            max-width: 232px;
+
+        }
+      
     }
 
     &__inner {
@@ -51,6 +62,7 @@
         display: block;
         color: $white-color;
         margin-bottom: 8px;
+        
     
         font-style: normal;
         line-height: 1.7;
@@ -76,6 +88,10 @@
         display: block;
         
         padding-bottom: 60px;
+
+        @include tablet {
+            padding-bottom: 0;
+        }
     }
 
     &__item {
@@ -118,8 +134,9 @@
     }
 
     &__input {
-        display: block;
+        
         width: 100%;
+        max-width: 450px;
         padding-left: 16px;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -142,10 +159,18 @@
 
         }
 
+        @include tablet {
+            display: block;
+            padding-left: 76px;
+            padding-right: 89px;
+
+        }
+
         @include desktop {
             display: flex;
             margin-right: 12px;
             width: 358px;
+            
         }
     }
 }

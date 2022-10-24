@@ -1,6 +1,7 @@
 .mobile-menu {
-position: absolute;
+position: fixed;
 display: block;
+z-index: 1;
 
 width: 100vw;
 height: 100vh;
@@ -31,20 +32,20 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 &__item {
 
-            &:hover {
-                .mobile-menu-navbar__link {
+    &:hover {
+        .mobile-menu__link {
                     color: $accent-color;
                 }
             }
     
             &:focus {
-                .mobile-menu-navbar__link {
+                .mobile-menu__link {
                     color: $accent-color;
                 }
             }
     
             &--active {
-                .mobile-menu-navbar__link {
+                .mobile-menu__link {
                     color: $accent-color;
                 }
             }
