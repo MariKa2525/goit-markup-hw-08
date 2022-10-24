@@ -2,19 +2,18 @@
     display: none;
     
     @include tablet {
-    display: block;
-    margin-left: auto;
+        display: block;
+        margin-left: auto;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     @include desktop {
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 
     &__item:not(:first-child) {
@@ -23,60 +22,48 @@
         }
 
         @include desktop {
-            
             margin-left: 50px;
             margin-top: 0;
         }
-        
     } 
 
     &__link {
         @include tablet {
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 1.16;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-        color: $primary-text-color;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.16;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            color: $primary-text-color;
     
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-             
-    &:hover,
-    &:focus {
-        
-        color: $accent-color;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            
+        &:hover,
+        &:focus {
+            color: $accent-color;
         }
 
-          @include desktop {
-           
+        @include desktop {
             font-size: 14px;
             line-height: 1.14;
             }
         }
-        }
-            
-        
+    }
     
-
     &__icon {
-       
-            margin-right: 10px;
-            fill: currentColor;
-       
+        margin-right: 10px;
+        fill: currentColor;
     }
 
     &__item:hover &__icon,
     &__item:focus &__icon {
-   
         fill: $accent-color;
-        
     }
 }

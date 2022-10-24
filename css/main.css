@@ -1069,7 +1069,7 @@ img {
     flex-direction: column;
   }
 }
-@media screen and (min-width: 1200px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .email {
     flex-direction: row;
   }

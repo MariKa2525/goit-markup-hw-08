@@ -1,5 +1,4 @@
 .form {
-    
     width: 370px;
     margin-left: auto;
     margin-right: auto;
@@ -52,8 +51,6 @@
         }
     }
 
-
-
     &__fild > &__text {
         transform: translateY(-50px);
     }
@@ -67,8 +64,8 @@
         height: 18px;
         display: inline-block;
     
-    transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translateY(-50%);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__fild:focus-within > &__icon,
@@ -80,11 +77,11 @@
         width: 100%;
         margin: 0;
         padding: 12px 16px;
-   
+
         font-family: inherit;
         cursor: pointer;
         resize: none;
-   
+        
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -100,7 +97,7 @@
         top: -10%;
         left: 0;
         transform: translateY(-50%);
-   
+        
         letter-spacing: 0.01em;
         font-size: 12px;
         line-height: 1.16;
@@ -108,13 +105,12 @@
 
     &__inner {
         display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         margin-top: 30px;
-        }
+    }
 }
-
 
 .chekbox {
     position: relative;
@@ -149,7 +145,7 @@
 
     &__text {
         font-size: 12px;
-line-height: 1.16;
+        line-height: 1.16;
 
         @include desktop {
             font-size: 14px;

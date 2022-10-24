@@ -17,14 +17,12 @@
 
     &__card {
         width: 100%;
-        // width: 270px;
         height: 120px;
         border-radius: 4px;
         background-color: $light-gray-bg;
         display: flex;
         align-items: center;
         justify-content: center;
-
     }
 
     &__icon {

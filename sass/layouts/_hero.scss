@@ -5,7 +5,6 @@
     width: 100%;
     max-width: 1600px;
     height: 400px;
-   
     margin: 0 auto;
     
     background-color: $background-hero;
@@ -22,8 +21,9 @@
     rgba(47, 48, 58, 0.5),
     rgba(47, 48, 58, 0.5)),
     url(../image/fon-mob-2x.jpg);
-}
-@include tablet {
+    }
+    
+    @include tablet {
     background-image: linear-gradient( to right,
     rgba(47, 48, 58, 0.5),
     rgba(47, 48, 58, 0.5)),
@@ -37,8 +37,9 @@
     rgba(47, 48, 58, 0.5)),
     url(../image/fon-tab-2x.jpg);
     }
-}
-@include desktop {
+    }
+
+    @include desktop {
     background-image: linear-gradient( to right,
     rgba(47, 48, 58, 0.5),
     rgba(47, 48, 58, 0.5)),
@@ -51,10 +52,9 @@
     rgba(47, 48, 58, 0.5)),
     url(../image/fon-des-2x.jpg);
     }
-   
     padding: 200px 0;
     height: 600px;
-}
+    }
 
     &__title {
         margin: auto;
@@ -69,20 +69,15 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
         max-width: 360px;
-
         
-@include mobile {
-    font-size: 26px;
-}
+        @include mobile {
+            font-size: 26px;
+        }
 
         @include desktop {
             font-size: 44px;
             line-height: 1.36;
             max-width: 696px;
-
         }
-
-
-
     }
 }

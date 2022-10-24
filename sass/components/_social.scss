@@ -46,16 +46,11 @@
         align-items: center;
         margin-top: 20px;
         margin-bottom: 60px;
-    
-    
-        
-        
         gap: 10px;
 
         @include desktop {
             padding-bottom: 100px;
         }
-    
     }
     
     &__footer-link {
