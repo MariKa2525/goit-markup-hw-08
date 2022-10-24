@@ -1,6 +1,5 @@
 
 body {
-    
     color: $primary-text-color;
     background-color: $white-color;
 
@@ -10,7 +9,6 @@ body {
     line-height: 1.71;
 }
 
-    
 .list {
     padding: 0;
     margin: 0;
@@ -23,18 +21,15 @@ body {
     padding-left: 15px;
     margin: 0 auto;
 
-    
-@include mobile {
-    width: 480px;
-
-}
-@include tablet {
-   width: 768px;
-
-}
-@include desktop {
-    width: 1200px;
-   }
+    @include mobile {
+        width: 480px;
+    }
+    @include tablet {
+        width: 768px;
+    }
+    @include desktop {
+        width: 1200px;
+    }
 
     &--header {
         display: flex;
@@ -42,32 +37,28 @@ body {
         justify-content: center;
         padding-left: 15px;
         padding-right: 15px;
+        
         @include desktop {
             max-width: 1200px;
             width: 100%;
             margin-left: auto;
             margin-right: auto;
-            
-
         }
     }
 
     &--mobile-menu {
         display: flex;
         flex-direction: column;
-justify-content: space-between;
-height: 100%;
-
+        justify-content: space-between;
+        height: 100%;
     }
 
     &--hero {
         text-align: center;
-        // padding: 118px 60px;
 
-       @include tablet {
-        padding: 118px 204px;
-       
-    }
+        @include tablet {
+            padding: 118px 204px;
+        }
     }
 
     &--footer {
@@ -127,17 +118,16 @@ height: 100%;
         margin-bottom: 30px;
 
         font-weight: 700;
-        font-size: 20px;
-        line-height: 1.17;
+        font-size: 28px;
+        line-height: 1.18;
         text-align: center;
         color: $title-text-color; 
 
-        @include mobile {
-            font-size: 28px;
-        }
-
+       
+        
         @include desktop {
             font-size: 36px;
+            line-height: 1.17;
             margin-bottom: 50px;
         }
     }

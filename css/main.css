@@ -111,19 +111,15 @@ body {
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   color: #212121;
-}
-@media screen and (min-width: 480px) {
-  .section__title {
-    font-size: 28px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .section__title {
     font-size: 36px;
+    line-height: 1.17;
     margin-bottom: 50px;
   }
 }
@@ -1136,7 +1132,7 @@ img {
 
 .modal {
   position: absolute;
-  top: 18%;
+  top: 45%;
   left: 50%;
   width: 450px;
   height: 609px;

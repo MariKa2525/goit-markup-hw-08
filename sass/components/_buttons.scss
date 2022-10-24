@@ -17,15 +17,11 @@
     text-decoration: none;
     cursor: pointer;
 
-
-    
     &__primary {
-        // position: relative;
         display: inline-flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
-        // width: 200px;
         padding: 10px 24px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         
@@ -40,25 +36,19 @@
         @include desktop {
             padding-right: 32px;
             padding-left: 32px;
-
         }
+    }
 
-
-        }
-
-        &--email {
-            padding: 10px 28px;
-        }
+    &--email {
+        padding: 10px 28px;
+    }
     
-        &__filters {
+    &__filters {
         padding: 6px 22px;
         min-width: 73px;
         
         color: $title-text-color;
         background-color: $light-gray-bg;
-        
-        // margin-bottom: 15px;
-    
         font-weight: 500;
         line-height: 1.62;
         letter-spacing: 0.03em;
