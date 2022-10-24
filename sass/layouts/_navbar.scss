@@ -3,8 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 15px;
-    padding-left: 15px;
+   
     width: 100%;
 
     
@@ -12,6 +11,9 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+    }
+    @include desktop {
+        width: auto;
     }
 
     
@@ -24,10 +26,13 @@
         justify-content: center;
         margin-left: 87px;
         margin-right: 96px;
+        
        
 
         // margin-left: 93px;
     }
+
+  
     }
     
     &__item {

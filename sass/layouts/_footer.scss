@@ -1,5 +1,5 @@
 .footer {
-    height: 603px;
+    
     padding: 60px 15px;
     // text-align: left;
 
@@ -12,6 +12,7 @@
     }
     @include desktop {
         // height: 252px;
+        
         
     }
 
@@ -62,6 +63,7 @@
         display: block;
         color: $white-color;
         margin-bottom: 8px;
+        white-space: nowrap;
         
     
         font-style: normal;
@@ -130,6 +132,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+
+        @include desktop {
+            flex-direction: row;
+        }
 
     }
 
@@ -155,7 +162,7 @@
         line-height: 1.25;
 
         @include mobile {
-            width: 450px;
+           
 
         }
 

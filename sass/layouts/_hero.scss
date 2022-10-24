@@ -10,25 +10,51 @@
     
     background-color: $background-hero;
     background-image: $gradient,
-    url(../image/fon.jpg);
+    url(../image/fon-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-    @include mobile {
-        width: 100%;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient( to right,
+    rgba(47, 48, 58, 0.5),
+    rgba(47, 48, 58, 0.5)),
+    url(../image/fon-mob-2x.jpg);
+}
+@include tablet {
+    background-image: linear-gradient( to right,
+    rgba(47, 48, 58, 0.5),
+    rgba(47, 48, 58, 0.5)),
+    url(../image/fon-tab.jpg);
     
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient( to right,
+    rgba(47, 48, 58, 0.5),
+    rgba(47, 48, 58, 0.5)),
+    url(../image/fon-tab-2x.jpg);
     }
-
-    @include tablet {
-      
+}
+@include desktop {
+    background-image: linear-gradient( to right,
+    rgba(47, 48, 58, 0.5),
+    rgba(47, 48, 58, 0.5)),
+    url(../image/fon-des.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient( to right,
+    rgba(47, 48, 58, 0.5),
+    rgba(47, 48, 58, 0.5)),
+    url(../image/fon-des-2x.jpg);
     }
-
-    @include desktop {
-        padding: 200px 0;
+   
+    padding: 200px 0;
     height: 600px;
-
-    }
+}
 
     &__title {
         margin: auto;

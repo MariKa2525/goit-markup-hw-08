@@ -25,6 +25,8 @@
                     <span class="burger__line"></span>
                 </button>
                 <div class="mobile-menu" data-menu>
+                    <div class="container container--mobile-menu">
+                        <div class="mobile-menu__top">
                     <ul class="mobile-menu__list list">
                         <li class="mobile-menu__item">
                             <a href="./index.html" class="mobile-menu__link">Студія</a></li>
@@ -33,8 +35,10 @@
                         <li class="mobile-menu__item">
                             <a href="#" class="mobile-menu__link">Контакти</a></li>
                     </ul>
+                </div>
+                    <div class="mobile-menu__wrap">
                     <ul class="mobile-menu__contacts list">
-                    <li">
+                    <li>
                         <a href="tel:+380961111111" class="mobile-menu__info mobile-menu__info--tel">
                         +38 096 111 11 11</a>
                     </li>
@@ -58,6 +62,8 @@
                     </li>
                 </ul>
             </div>
+        </div>
+    </div>
             <ul class="navbar__list list">
                 <li class="navbar__item">
                     <a href="./index.html" class="navbar__link">Студія</a></li>
@@ -101,7 +107,19 @@
                     <li class="project">
                         <a class="project__link" href="#">
                             <div class="project__card">
-                                <img class="project__image" src="./image/img1.jpg" alt="Приклад вебсайту" width="370"/>
+                                <picture>
+                                    <source srcset="./image/img1.jpg 1x, 
+                                    ./image/img1-des-2x.jpg 2x" 
+                                    media="(min-widht: 1200px)" />
+                                    <source srcset="./image/img1-tab.jpg 1x,
+                                    ./image/img1-tab-2x.jpg 2x" 
+                                    media="(min-widht: 768px)" />
+                                    <source srcset="./image/img1-mob.jpg 1x,
+                                    ./image/img1-mob-2x.jpg 2x" 
+                                    media="(min-widht: 320px)" />
+                                    <img class="project__image" src="./image/img1.jpg" alt="Приклад вебсайту"/>
+                                </picture>
+                               
                                 <p class="project__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати  вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="project__info">
@@ -113,7 +131,18 @@
                     <li class="project">
                         <a class="project__link" href="">
                             <div class="project__card">
-                                <img class="project__image"  src="./image/img2.jpg" alt="Два гравці з м'ячем" width="370"/>
+                                <picture>
+                                    <source srcset="./image/img2.jpg 1x, 
+                                    ./image/img2-des-2x.jpg 2x" 
+                                    media="(min-widht: 1200px)" />
+                                    <source srcset="./image/img2-tab.jpg 1x,
+                                    ./image/img2-tab-2x.jpg 2x" 
+                                    media="(min-widht: 768px)" />
+                                    <source srcset="./image/img2-mob.jpg 1x,
+                                    ./image/img2-mob-2x.jpg 2x" 
+                                    media="(min-widht: 320px)" />
+                                    <img class="project__image" src="./image/img2.jpg" alt="Два гравці з м'ячем"/>
+                                </picture>
                                 <p class="project__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="project__info">
@@ -125,7 +154,18 @@
                     <li class="project">
                         <a class="project__link" href="">
                             <div class="project__card">
-                                <img class="project__image" src="./image/img3.jpg" alt="Емблема ресторана Seafood" width="370"/>
+                                <picture>
+                                    <source srcset="./image/img3.jpg 1x, 
+                                    ./image/img3-des-2x.jpg 2x" 
+                                    media="(min-widht: 1200px)" />
+                                    <source srcset="./image/img3-tab.jpg 1x,
+                                    ./image/img3-tab-2x.jpg 2x" 
+                                    media="(min-widht: 768px)" />
+                                    <source srcset="./image/img3-mob.jpg 1x,
+                                    ./image/img3-mob-2x.jpg 2x" 
+                                    media="(min-widht: 320px)" />
+                                    <img class="project__image" src="./image/img3.jpg" alt="Емблема ресторана Seafood" />
+                                </picture>                        
                                 <p class="project__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="project__info">
@@ -137,7 +177,18 @@
                     <li class="project">
                         <a class="project__link" href="">
                             <div class="project__card">
-                                <img class="project__image" src="./image/img4.jpg" alt="Навушники" width="370"/>
+                                <picture>
+                                    <source srcset="./image/img4.jpg 1x, 
+                                    ./image/img4-des-2x.jpg 2x" 
+                                    media="(min-widht: 1200px)" />
+                                    <source srcset="./image/img4-tab.jpg 1x,
+                                    ./image/img4-tab-2x.jpg 2x" 
+                                    media="(min-widht: 768px)" />
+                                    <source srcset="./image/img4-mob.jpg 1x,
+                                    ./image/img4-mob-2x.jpg 2x" 
+                                    media="(min-widht: 320px)" />
+                                    <img class="project__image" src="./image/img4.jpg" alt="Навушники" />
+                                </picture>                                   
                                 <p class="project__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="project__info">
@@ -148,8 +199,19 @@
                     </li>
                     <li class="project">
                         <a class="project__link" href="">    
-                            <div class="project__card">                
-                                <img class="project__image" src="./image/img5.jpg" alt="Дві коробки" width="370"/>
+                            <div class="project__card"> 
+                                <picture>
+                                    <source srcset="./image/img5.jpg 1x, 
+                                    ./image/img5-des-2x.jpg 2x" 
+                                    media="(min-widht: 1200px)" />
+                                    <source srcset="./image/img5-tab.jpg 1x,
+                                    ./image/img5-tab-2x.jpg 2x" 
+                                    media="(min-widht: 768px)" />
+                                    <source srcset="./image/img5-mob.jpg 1x,
+                                    ./image/img5-mob-2x.jpg 2x" 
+                                    media="(min-widht: 320px)" />
+                                    <img class="project__image" src="./image/img5.jpg" alt="Дві коробки" />
+                                </picture>                         
                                 <p class="project__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати  вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="project__info">
@@ -161,7 +223,19 @@
                     <li class="project">
                         <a class="project__link" href="">
                             <div class="project__card">
-                                <img class="project__image " src="./image/img6.jpg" alt="Монітор комп'ютера" width="370"/>
+                                <picture>
+                                    <source srcset="./image/img6.jpg 1x, 
+                                    ./image/img6-des-2x.jpg 2x" 
+                                    media="(min-widht: 1200px)" />
+                                    <source srcset="./image/img6-tab.jpg 1x,
+                                    ./image/img6-tab-2x.jpg 2x" 
+                                    media="(min-widht: 768px)" />
+                                    <source srcset="./image/img6-mob.jpg 1x,
+                                    ./image/img6-mob-2x.jpg 2x" 
+                                    media="(min-widht: 320px)" />
+                                    <img class="project__image" src="./image/img6.jpg" alt="Монітор комп'ютера" />
+                                </picture>  
+                                
                                 <p class="project__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="project__info">
@@ -173,7 +247,19 @@
                     <li class="project">
                         <a class="project__link" href="">
                             <div class="project__card">
-                                <img class="project__image" src="./image/img7.jpg" alt="Розгорнута книжка" width="370"/>
+                                <picture>
+                                    <source srcset="./image/img7.jpg 1x, 
+                                    ./image/img7-des-2x.jpg 2x" 
+                                    media="(min-widht: 1200px)" />
+                                    <source srcset="./image/img7-tab.jpg 1x,
+                                    ./image/img7-tab-2x.jpg 2x" 
+                                    media="(min-widht: 768px)" />
+                                    <source srcset="./image/img7-mob.jpg 1x,
+                                    ./image/img7-mob-2x.jpg 2x" 
+                                    media="(min-widht: 320px)" />
+                                    <img class="project__image" src="./image/img7.jpg" alt="Розгорнута книжка" />
+                                </picture>  
+                                
                                 <p class="project__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="project__info">
@@ -185,7 +271,19 @@
                     <li class="project">
                         <a class="project__link" href="">
                             <div class="project__card ">
-                                <img class="project__image" src="./image/img8.jpg" alt="Бірка" width="370"/>
+                                <picture>
+                                    <source srcset="./image/img8.jpg 1x, 
+                                    ./image/img8-des-2x.jpg 2x" 
+                                    media="(min-widht: 1200px)" />
+                                    <source srcset="./image/img8-tab.jpg 1x,
+                                    ./image/img8-tab-2x.jpg 2x" 
+                                    media="(min-widht: 768px)" />
+                                    <source srcset="./image/img8-mob.jpg 1x,
+                                    ./image/img8-mob-2x.jpg 2x" 
+                                    media="(min-widht: 320px)" />
+                                    <img class="project__image" src="./image/img8.jpg" alt="Бірка" />
+                                </picture> 
+                                
                                 <p class="project__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="project__info">
@@ -197,7 +295,18 @@
                     <li class="project">
                         <a class="project__link" href="">
                             <div class="project__card">
-                                <img class="project__image" src="./image/img9.jpg" alt="Відкритий ноутбук" width="370"/>
+                                <picture>
+                                    <source srcset="./image/img9.jpg 1x, 
+                                    ./image/img9-des-2x.jpg 2x" 
+                                    media="(min-widht: 1200px)" />
+                                    <source srcset="./image/img9-tab.jpg 1x,
+                                    ./image/img9-tab-2x.jpg 2x" 
+                                    media="(min-widht: 768px)" />
+                                    <source srcset="./image/img9-mob.jpg 1x,
+                                    ./image/img9-mob-2x.jpg 2x" 
+                                    media="(min-widht: 320px)" />
+                                    <img class="project__image" src="./image/img9.jpg" alt="Відкритий ноутбук" />
+                                </picture>                               
                                 <p class="project__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="project__info">

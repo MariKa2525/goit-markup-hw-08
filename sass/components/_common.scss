@@ -52,6 +52,14 @@ body {
         }
     }
 
+    &--mobile-menu {
+        display: flex;
+        flex-direction: column;
+justify-content: space-between;
+height: 100%;
+
+    }
+
     &--hero {
         text-align: center;
         // padding: 118px 60px;
@@ -80,6 +88,7 @@ body {
             flex-wrap: nowrap;
             margin-left: auto;
     margin-right: auto;
+    gap: 0;
         }
     }
 
