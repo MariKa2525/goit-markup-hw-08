@@ -73,8 +73,6 @@
         line-height: 1.5;
         color: $title-text-color;
 
-        @include desktop {
-            line-height: 1.15;
-        }
+    
     }
 }
