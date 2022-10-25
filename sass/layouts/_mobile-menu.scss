@@ -103,6 +103,7 @@
     display: flex;
     width: 100%;
     margin-top: 47px;
+    flex-wrap: wrap;
     
     &__item:not(:last-child) {
         border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -110,7 +111,7 @@
 
     &__link {
         display: block;
-        padding: 1px 5px;
+        padding: 1px 10px;
 
         font-weight: 500;
         font-size: 13px;

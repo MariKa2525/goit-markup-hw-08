@@ -43,6 +43,8 @@
     &.is-open {
         .burger__line {
             width: 0;
+           
+            position: fixed;
 
             &::before {
                 transform: rotate(45deg);
@@ -66,3 +68,4 @@
         display: none;
     }
 }
+
